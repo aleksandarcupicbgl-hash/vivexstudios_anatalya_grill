@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Antalya Grill – Döner, Falafel &amp; Pizza</title>
+  <meta name="description" content="Antalya Grill – frischer Döner im hausgemachten Brot, Falafel, Pizza, Pide, Salate und täglich frische Baklava. Herzlicher Service seit 2024. ★ 4,8 bei 349 Google-Bewertungen.">
+  <meta name="theme-color" content="#0E0E0E">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Antalya Grill – Döner, Falafel &amp; Pizza">
+  <meta property="og:description" content="Frischer Döner, Falafel, Pizza und täglich frische Baklava. ★ 4,8 bei 349 Google-Bewertungen.">
+  <meta property="og:image" content="assets/img/fassade-full.webp">
+  <meta property="og:locale" content="de_DE">
+  <!-- PLATZHALTER: echte Domain eintragen, z. B. https://www.antalya-grill.de/ -->
+  <!-- <link rel="canonical" href="https://www.DOMAIN.de/"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/fassade-full.webp" imagesrcset="assets/img/fassade-800.webp 800w, assets/img/fassade-full.webp 1600w" imagesizes="100vw">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Intro nur einmal pro Sitzung: wird vor dem ersten Rendern entschieden, damit nichts flackert -->
+  <script>
+    document.documentElement.classList.add('js');
+    (function (d) {
+      var seen = false;
+      try { seen = !!sessionStorage.getItem('ag-intro-seen'); } catch (e) {}
+      d.classList.add(seen ? 'no-intro' : 'intro-lock');
+    })(document.documentElement);
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Antalya Grill",
+    "slogan": "Döner • Falafel • Pizza",
+    "foundingDate": "2024",
+    "servesCuisine": ["Döner", "Falafel", "Pizza", "Türkisch"],
+    "priceRange": "€1–10",
+    "image": "assets/img/fassade-full.webp",
+    "telephone": "+49 000 0000000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "STRASSE 23",
+      "postalCode": "PLZ",
+      "addressLocality": "ORT",
+      "addressCountry": "DE"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <!-- ===== Intro ===== -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__inner">
+      <img class="intro__logo" src="assets/img/logo-dark.webp" width="1000" height="223" alt="">
+    </div>
+  </div>
+
+  <!-- Wiederverwendbarer Stern -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="star" viewBox="0 0 24 24"><path d="M12 1.8l3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 17.9l-6.4 3.5 1.4-7.1-5.3-5 7.2-.9z"/></symbol>
+  </svg>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a class="nav__brand" href="#start" aria-label="Antalya Grill – zum Start">
+        <img src="assets/img/logo-light.webp" width="1000" height="223" alt="Antalya Grill Logo">
+      </a>
+      <nav class="nav__menu" id="nav-menu" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="#start" data-nav="start">Start</a></li>
+          <li><a href="#ueber-uns" data-nav="ueber-uns">Über uns</a></li>
+          <li><a href="#speisekarte" data-nav="speisekarte">Speisekarte</a></li>
+          <li><a href="#bewertungen" data-nav="bewertungen">Bewertungen</a></li>
+          <li><a href="#kontakt" data-nav="kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <!-- PLATZHALTER: Telefonnummer (href und Text) -->
+      <a class="btn btn--gold btn--sm nav__call" href="tel:+490000000000" data-placeholder="telefon">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+        <span>Anrufen</span>
+      </a>
+      <button class="nav__toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== 1. Hero ===== -->
+    <section class="hero" id="start" data-nav-target="start">
+      <div class="hero__media" id="hero-media">
+        <img src="assets/img/fassade-full.webp"
+             srcset="assets/img/fassade-800.webp 800w, assets/img/fassade-full.webp 1600w" sizes="100vw"
+             width="1600" height="858" fetchpriority="high"
+             alt="Außenansicht des Antalya Grill mit beleuchtetem Schriftzug über dem Eingang, Hausnummer 23 und Werbebannern mit Döner, Pizza und Burger">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <div class="stars-arc" aria-hidden="true">
+          <svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg>
+        </div>
+        <h1 class="hero__title">Antalya <span>Grill</span></h1>
+        <p class="hero__subtitle">Döner • Falafel • Pizza</p>
+        <div class="hero__actions">
+          <a class="btn btn--gold" href="#speisekarte">Zur Speisekarte</a>
+          <a class="btn btn--ghost" href="#kontakt">Anfahrt</a>
+        </div>
+        <a class="rating-badge" href="#bewertungen">
+          <span class="rating-badge__star">★</span>
+          <strong>4,8</strong> bei 349 Google-Bewertungen
+        </a>
+      </div>
+      <a class="hero__scroll" href="#ueber-uns" aria-label="Nach unten scrollen"><span></span></a>
+    </section>
+
+    <!-- ===== 2. Über uns ===== -->
+    <section class="section section--marble" id="ueber-uns" data-nav-target="ueber-uns">
+      <div class="container split">
+        <figure class="split__media reveal">
+          <img src="assets/img/team-800.webp"
+               srcset="assets/img/team-800.webp 800w, assets/img/team-full.webp 1016w" sizes="(min-width: 900px) 45vw, 100vw"
+               width="800" height="754" loading="lazy" decoding="async"
+               alt="Vier Mitarbeiter des Antalya Grill von hinten in schwarzen Shirts mit Antalya-Grill-Aufdruck vor dem Eingang des Restaurants">
+          <span class="est-badge">Est. 2024</span>
+        </figure>
+        <div class="split__text reveal">
+          <p class="eyebrow">Über uns</p>
+          <h2 class="h2">Mit Herz gemacht – seit 2024</h2>
+          <p>Bei uns im Antalya Grill dreht sich alles um ehrliches, frisches Essen. Unser Brot backen wir selbst, das Fleisch wird täglich am Spieß gegrillt und Salate, Soßen und Beilagen bereiten wir jeden Tag frisch vor.</p>
+          <p>Seit wir 2024 unsere Türen geöffnet haben, ist unser Team für euch da – mit herzlichem Service, einem Lächeln und immer einer ordentlichen Portion Gastfreundschaft.</p>
+          <ul class="facts">
+            <li><svg><use href="#star"/></svg>Hausgemachtes Brot</li>
+            <li><svg><use href="#star"/></svg>Täglich frische Zutaten</li>
+            <li><svg><use href="#star"/></svg>Herzlicher Service</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. Frisch zubereitet ===== -->
+    <section class="section section--dark" id="frisch" data-nav-target="ueber-uns">
+      <div class="container split split--reverse">
+        <figure class="split__media reveal">
+          <img src="assets/img/theke-doener-800.webp"
+               srcset="assets/img/theke-doener-800.webp 800w, assets/img/theke-doener-full.webp 1407w" sizes="(min-width: 900px) 45vw, 100vw"
+               width="800" height="721" loading="lazy" decoding="async"
+               alt="Theke im Antalya Grill mit schwarzem Marmor, Mitarbeiter hinter dem Dönerspieß, Menü-Bildschirmen, bunten Laternen und frischer Baklava in der Vitrine">
+        </figure>
+        <div class="split__text reveal">
+          <p class="eyebrow">Frisch zubereitet</p>
+          <h2 class="h2">Direkt vor deinen Augen</h2>
+          <p>Bei uns gibt es keine Geheimnisse: Der Spieß dreht sich den ganzen Tag, das Fleisch wird frisch abgeschnitten und dein Döner, Dürüm oder Teller wird vor deinen Augen zusammengestellt – genau so, wie du ihn magst.</p>
+          <p>Pizza und Pide kommen heiß aus dem Ofen, Pommes frisch aus der Fritteuse. Schnell, aber nie gehetzt.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. Salate & Vorspeisen ===== -->
+    <section class="section section--marble" id="salate" data-nav-target="ueber-uns">
+      <div class="container split">
+        <figure class="split__media reveal">
+          <img src="assets/img/salatbar-800.webp"
+               srcset="assets/img/salatbar-800.webp 800w, assets/img/salatbar-full.webp 1305w" sizes="(min-width: 900px) 45vw, 100vw"
+               width="800" height="501" loading="lazy" decoding="async"
+               alt="Salat- und Vorspeisentheke mit Hummus, Joghurt-Dips, bunten Salaten, Oliven, Falafel, gegrilltem Gemüse, Zitronen und Ananas">
+        </figure>
+        <div class="split__text reveal">
+          <p class="eyebrow">Salate &amp; Vorspeisen</p>
+          <h2 class="h2">Bunt, frisch &amp; hausgemacht</h2>
+          <p>Unsere Vorspeisentheke ist ein Fest für die Augen: cremiger Hummus, würzige Dips, knackige Salate, Oliven, gegrilltes Gemüse und goldbraune Falafel.</p>
+          <p>Ob als Beilage, zum Teilen oder als leichte Mahlzeit – auch Vegetarier kommen bei uns voll auf ihre Kosten.</p>
+          <div class="chips">
+            <span>Hummus</span><span>Frische Salate</span><span>Falafel</span><span>Vegetarische Auswahl</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. Speisekarte ===== -->
+    <section class="section section--dark menu" id="speisekarte" data-nav-target="speisekarte">
+      <div class="container">
+        <header class="section-head reveal">
+          <div class="stars-arc stars-arc--sm" aria-hidden="true">
+            <svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg>
+          </div>
+          <h2 class="h2">Speisekarte</h2>
+          <p class="section-head__sub">Alle Gerichte mit Nummer – die Zahlen in Klammern sind Zusatzstoffe (Legende unten).</p>
+        </header>
+
+        <!-- MENU:START -->
+        <div class="menu-tabs" role="tablist" aria-label="Kategorien">
+          <button class="menu-tab is-active" role="tab" aria-selected="true" data-filter="all">Alle</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="doener">Döner &amp; Dürüm</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="teller">Teller &amp; Boxen</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="falafel">Falafel &amp; Vegetarisch</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="suppen">Suppen</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="burger">Burger &amp; Snacks</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="pizza">Pizza &amp; Pide</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="salate">Salate</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="kalt">Getränke kalt</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="heiss">Getränke heiß</button>
+        </div>
+        <div class="menu-groups">
+          <section class="menu-group reveal" data-cat="doener" aria-labelledby="mg-doener">
+            <h3 class="menu-group__title" id="mg-doener">Döner &amp; Dürüm</h3>
+            <ul class="menu-list">
+              <li class="menu-item"><span class="nr">1</span><span class="name">Drehspießfleisch im hausgemachten Brot <sup class="add" title="Zusatzstoffe: 8, 12">(8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">2</span><span class="name">Drehspießfleisch im hausgemachten Brot mit Käse <sup class="add" title="Zusatzstoffe: 8, 12">(8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">3</span><span class="name">Drehspießfleisch im hausgemachten Brot mit Pommes <sup class="add" title="Zusatzstoffe: 2, 8, 12">(2, 8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">4</span><span class="name">Dürüm <sup class="add" title="Zusatzstoffe: 8, 12">(8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">5</span><span class="name">Dürüm mit Käse und Gemüse <sup class="add" title="Zusatzstoffe: 8, 12">(8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+            </ul>
+          </section>
+          <section class="menu-group reveal" data-cat="teller" aria-labelledby="mg-teller">
+            <h3 class="menu-group__title" id="mg-teller">Teller &amp; Boxen</h3>
+            <ul class="menu-list">
+              <li class="menu-item"><span class="nr">10</span><span class="name">Drehspießfleischteller <sup class="add" title="Zusatzstoffe: 8, 12">(8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">12</span><span class="name">Drehspießfleischbox mit Pommes <sup class="add" title="Zusatzstoffe: 2, 8, 12">(2, 8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">7,00&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">13</span><span class="name">Drehspießfleischbox mit Salat <sup class="add" title="Zusatzstoffe: 8, 12">(8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">6,50&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">14</span><span class="name">Hähnchenschnitzel mit Pommes <sup class="add" title="Zusatzstoffe: 2, 8">(2, 8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">15</span><span class="name">Hähnchenschnitzel mit Salat <sup class="add" title="Zusatzstoffe: 8">(8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">9,00&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">22</span><span class="name">Drehspießfleischbox mit Reis <sup class="add" title="Zusatzstoffe: 8, 12">(8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">23</span><span class="name">Drehspießfleischteller mit Reis <sup class="add" title="Zusatzstoffe: 8, 12">(8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">25</span><span class="name">Kuzi mit Bohnensuppe und Reis <sup class="add" title="Zusatzstoffe: eventuell 8">(eventuell 8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">26</span><span class="name">Halbes knuspriges Hähnchen <sup class="add" title="Zusatzstoffe: 8">(8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">27</span><span class="name">Knuspriges Hähnchen (Crispy-Chicken) <sup class="add" title="Zusatzstoffe: 2, 8">(2, 8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">28</span><span class="name">Sac Tava <sup class="add" title="Zusatzstoffe: je nach Rezept evtl. 8">(je nach Rezept evtl. 8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">48</span><span class="name">Cheese Box <sup class="add" title="Zusatzstoffe: 2, 8">(2, 8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">7,50&nbsp;€</span></li>
+            </ul>
+          </section>
+          <section class="menu-group reveal" data-cat="falafel" aria-labelledby="mg-falafel">
+            <h3 class="menu-group__title" id="mg-falafel">Falafel &amp; Vegetarisch</h3>
+            <ul class="menu-list">
+              <li class="menu-item"><span class="nr">6</span><span class="name">Falafel Dürüm <sup class="add" title="Zusatzstoffe: eventuell 8">(eventuell 8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">7</span><span class="name">Falafel Sandwich (vegetarisch) <sup class="add" title="Zusatzstoffe: eventuell 8">(eventuell 8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">11</span><span class="name">Falafel Teller <sup class="add" title="Zusatzstoffe: eventuell 8">(eventuell 8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">10,00&nbsp;€</span></li>
+            </ul>
+          </section>
+          <section class="menu-group reveal" data-cat="suppen" aria-labelledby="mg-suppen">
+            <h3 class="menu-group__title" id="mg-suppen">Suppen</h3>
+            <ul class="menu-list">
+              <li class="menu-item"><span class="nr">20</span><span class="name">Linsensuppe mit hausgemachtem Brot</span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">21</span><span class="name">Bohnensuppe mit hausgemachtem Brot</span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">24</span><span class="name">Bohnensuppe mit Reis und hausgemachtem Brot</span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+            </ul>
+          </section>
+          <section class="menu-group reveal" data-cat="burger" aria-labelledby="mg-burger">
+            <h3 class="menu-group__title" id="mg-burger">Burger &amp; Snacks</h3>
+            <ul class="menu-list">
+              <li class="menu-item"><span class="nr">16</span><span class="name">Currywurst mit Pommes <sup class="add" title="Zusatzstoffe: 2, 8, 12">(2, 8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">8,00&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">17</span><span class="name">Hamburger <sup class="add" title="Zusatzstoffe: 8, 12">(8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">18</span><span class="name">Cheeseburger <sup class="add" title="Zusatzstoffe: 8, 12">(8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">19</span><span class="name">Chickenburger <sup class="add" title="Zusatzstoffe: 8, 12">(8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">41</span><span class="name">Portion Pommes klein <sup class="add" title="Zusatzstoffe: 2">(2)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">3,00&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">42</span><span class="name">Portion Pommes groß <sup class="add" title="Zusatzstoffe: 2">(2)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">4,00&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">43</span><span class="name">Hot Dog <sup class="add" title="Zusatzstoffe: 1, 8, 12">(1, 8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">3,50&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">44</span><span class="name">Chicken Wings <sup class="add" title="Zusatzstoffe: 2, 8">(2, 8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">5,50&nbsp;€</span></li>
+            </ul>
+          </section>
+          <section class="menu-group reveal" data-cat="pizza" aria-labelledby="mg-pizza">
+            <h3 class="menu-group__title" id="mg-pizza">Pizza &amp; Pide</h3>
+            <ul class="menu-list">
+              <li class="menu-item"><span class="nr">8</span><span class="name">Lahmacun mit Salat <sup class="add" title="Zusatzstoffe: 8, 12">(8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">9</span><span class="name">Lahmacun mit Drehspießfleisch <sup class="add" title="Zusatzstoffe: 8, 12">(8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">29</span><span class="name">Pizza Margherita <sup class="add" title="Zusatzstoffe: 1, 8">(1, 8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">30</span><span class="name">Pizza Salami <sup class="add" title="Zusatzstoffe: 1, 8, 12">(1, 8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">9,50&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">31</span><span class="name">Pizza Schinken <sup class="add" title="Zusatzstoffe: 1, 8, 12">(1, 8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">9,50&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">32</span><span class="name">Pizza Funghi <sup class="add" title="Zusatzstoffe: 8">(8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">9,00&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">33</span><span class="name">Pizza Regina <sup class="add" title="Zusatzstoffe: 1, 8, 12">(1, 8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">10,00&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">34</span><span class="name">Pizza Tonno <sup class="add" title="Zusatzstoffe: 1, 8">(1, 8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">10,50&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">35</span><span class="name">Pizza mit frischem Gemüse <sup class="add" title="Zusatzstoffe: 8">(8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">9,50&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">36</span><span class="name">Pizza mit Drehspießfleisch <sup class="add" title="Zusatzstoffe: 1, 8, 12">(1, 8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">11,00&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">37</span><span class="name">Familienpizza <sup class="add" title="Zusatzstoffe: je nach Belag 1, 8, 12">(je nach Belag 1, 8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">20,00&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">38</span><span class="name">Calzone Pizza <sup class="add" title="Zusatzstoffe: 1, 8, 12">(1, 8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">9,50&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">39</span><span class="name">Sucuk Pizza <sup class="add" title="Zusatzstoffe: 1, 8, 12">(1, 8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">10,00&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">40</span><span class="name">Pide <sup class="add" title="Zusatzstoffe: 8">(8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">6,00&nbsp;€</span></li>
+            </ul>
+          </section>
+          <section class="menu-group reveal" data-cat="salate" aria-labelledby="mg-salate">
+            <h3 class="menu-group__title" id="mg-salate">Salate</h3>
+            <ul class="menu-list">
+              <li class="menu-item"><span class="nr">45</span><span class="name">Salat mit Drehspießfleisch <sup class="add" title="Zusatzstoffe: 8, 12">(8, 12)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">6,00&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">46</span><span class="name">Salat mit Käse <sup class="add" title="Zusatzstoffe: keine / evtl. 8">(keine / evtl. 8)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">4,50&nbsp;€</span></li>
+              <li class="menu-item"><span class="nr">47</span><span class="name">Fitness Salat <sup class="add" title="Zusatzstoffe: keine">(keine)</sup></span><span class="dots" aria-hidden="true"></span><span class="price">7,50&nbsp;€</span></li>
+            </ul>
+          </section>
+          <section class="menu-group reveal" data-cat="kalt" aria-labelledby="mg-kalt">
+            <h3 class="menu-group__title" id="mg-kalt">Getränke kalt</h3>
+            <ul class="menu-list">
+              <li class="menu-item"><span class="nr">49</span><span class="name">Cola <sup class="add" title="Zusatzstoffe: 11">(11)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">50</span><span class="name">Cola Zero <sup class="add" title="Zusatzstoffe: 5, 6, 7, 11">(5, 6, 7, 11)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">51</span><span class="name">Mezzo Mix <sup class="add" title="Zusatzstoffe: 10, 11">(10, 11)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">52</span><span class="name">Fanta <sup class="add" title="Zusatzstoffe: 11">(11)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">53</span><span class="name">Sprite <sup class="add" title="Zusatzstoffe: evtl. Farbstoff 2">(evtl. Farbstoff 2)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">54</span><span class="name">Ayran <sup class="add" title="Zusatzstoffe: keine Zusatzstoffe">(keine Zusatzstoffe)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">55</span><span class="name">Uludag <sup class="add" title="Zusatzstoffe: Farbstoff 2, evtl. 11">(Farbstoff 2, evtl. 11)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">56</span><span class="name">Red Bull <sup class="add" title="Zusatzstoffe: 11">(11)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">57</span><span class="name">Wasser <sup class="add" title="Zusatzstoffe: keine">(keine)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+            </ul>
+          </section>
+          <section class="menu-group reveal" data-cat="heiss" aria-labelledby="mg-heiss">
+            <h3 class="menu-group__title" id="mg-heiss">Getränke heiß</h3>
+            <ul class="menu-list">
+              <li class="menu-item"><span class="nr">58</span><span class="name">Tee <sup class="add" title="Zusatzstoffe: keine">(keine)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">59</span><span class="name">Kaffee <sup class="add" title="Zusatzstoffe: 11">(11)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">60</span><span class="name">Cappuccino <sup class="add" title="Zusatzstoffe: 11">(11)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">61</span><span class="name">Latte Macchiato <sup class="add" title="Zusatzstoffe: 11">(11)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+              <li class="menu-item"><span class="nr">62</span><span class="name">Espresso <sup class="add" title="Zusatzstoffe: 11">(11)</sup></span><span class="dots" aria-hidden="true"></span><span class="price price--tbd" data-placeholder="preis">Preis folgt</span></li>
+            </ul>
+          </section>
+        </div>
+        <!-- MENU:END -->
+
+        <details class="legend reveal">
+          <summary>Zusatzstoffe &amp; Legende anzeigen</summary>
+          <dl class="legend__list">
+            <div><dt>1</dt><dd>Konservierungsstoff</dd></div>
+            <div><dt>2</dt><dd>Farbstoff</dd></div>
+            <div><dt>3</dt><dd>Antioxidationsmittel</dd></div>
+            <div><dt>5</dt><dd>Süßungsmittel Cyclamat</dd></div>
+            <div><dt>6</dt><dd>Süßungsmittel Aspartam</dd></div>
+            <div><dt>7</dt><dd>Süßungsmittel Acesulfam</dd></div>
+            <div><dt>8</dt><dd>Phosphat</dd></div>
+            <div><dt>10</dt><dd>Chinin</dd></div>
+            <div><dt>11</dt><dd>Coffein</dd></div>
+            <div><dt>12</dt><dd>Geschmacksverstärker</dd></div>
+            <div><dt>15</dt><dd>Gentechnisch verändert</dd></div>
+          </dl>
+          <p class="legend__note">Alle Preise in Euro inkl. MwSt. Informationen zu Allergenen erhältst du jederzeit bei unserem Personal.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ===== 6. Süßes zum Schluss ===== -->
+    <section class="baklava" id="baklava" data-nav-target="speisekarte">
+      <div class="baklava__media">
+        <img src="assets/img/baklava.webp" width="710" height="927" loading="lazy" decoding="async"
+             alt="Nahaufnahme frischer Baklava auf Blechen – goldbraune Blätterteig-Röllchen mit gehackten Pistazien">
+      </div>
+      <div class="baklava__text reveal">
+        <p class="eyebrow">Süßes zum Schluss</p>
+        <h2 class="h2">Frische Baklava –<br>täglich</h2>
+        <p>Hauchdünner Teig, knusprig gebacken, mit Sirup getränkt und mit grünen Pistazien bestreut. Der perfekte Abschluss – am besten mit einem Glas türkischem Tee.</p>
+        <div class="stars-row" aria-hidden="true">
+          <svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 7. Bewertungen ===== -->
+    <section class="section section--marble reviews" id="bewertungen" data-nav-target="bewertungen">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="reviews__score"><span class="reviews__num">4,8</span> <span class="reviews__star">★</span></p>
+          <h2 class="h2">349 Bewertungen auf Google</h2>
+          <div class="stars-row stars-row--center" aria-label="4,8 von 5 Sternen">
+            <svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg>
+          </div>
+        </header>
+
+        <!-- PLATZHALTER: Die drei Bewertungstexte wörtlich (Englisch) aus den Google-Screenshots einfügen -->
+        <div class="reviews__grid">
+          <article class="review-card reveal">
+            <div class="review-card__stars" aria-label="5 von 5 Sternen"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+            <blockquote lang="en"><p class="ph" data-placeholder="bewertung-1">[Bewertungstext 1 – wörtlich aus dem Google-Screenshot einfügen]</p></blockquote>
+            <footer class="review-card__src"><span class="g">G</span> Google-Bewertung</footer>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-card__stars" aria-label="5 von 5 Sternen"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+            <blockquote lang="en"><p class="ph" data-placeholder="bewertung-2">[Bewertungstext 2 – wörtlich aus dem Google-Screenshot einfügen]</p></blockquote>
+            <footer class="review-card__src"><span class="g">G</span> Google-Bewertung</footer>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-card__stars" aria-label="5 von 5 Sternen"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+            <blockquote lang="en"><p class="ph" data-placeholder="bewertung-3">[Bewertungstext 3 – wörtlich aus dem Google-Screenshot einfügen]</p></blockquote>
+            <footer class="review-card__src"><span class="g">G</span> Google-Bewertung</footer>
+          </article>
+        </div>
+
+        <div class="center reveal">
+          <!-- PLATZHALTER: direkten Link zum Google-Eintrag (Bewertungen) eintragen -->
+          <a class="btn btn--gold" href="https://www.google.com/search?q=Antalya+Grill" target="_blank" rel="noopener" data-placeholder="google-link">Alle Bewertungen auf Google</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 8. Kontakt & Anfahrt ===== -->
+    <section class="section section--dark contact" id="kontakt" data-nav-target="kontakt">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2 class="h2">Kontakt &amp; Anfahrt</h2>
+          <p class="section-head__sub">Komm vorbei, ruf an oder bestell zum Mitnehmen.</p>
+        </header>
+        <div class="contact__grid">
+          <div class="contact__cards">
+            <div class="info-card reveal">
+              <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>Adresse</h3>
+              <!-- PLATZHALTER: Straße, PLZ, Ort -->
+              <address>
+                Antalya Grill<br>
+                <span class="ph" data-placeholder="strasse">[Straße]</span> 23<br>
+                <span class="ph" data-placeholder="plz-ort">[PLZ] [Ort]</span>
+              </address>
+            </div>
+            <div class="info-card reveal">
+              <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Telefon</h3>
+              <!-- PLATZHALTER: Telefonnummer -->
+              <p><a class="ph" href="tel:+490000000000" data-placeholder="telefon">[Telefonnummer]</a></p>
+            </div>
+            <div class="info-card reveal">
+              <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.4l3.5 2.1-.8 1.3L11 13V7h2z"/></svg>Öffnungszeiten</h3>
+              <!-- PLATZHALTER: Öffnungszeiten -->
+              <table class="hours">
+                <tr><th>Montag</th><td class="ph" data-placeholder="zeiten">[00:00 – 00:00]</td></tr>
+                <tr><th>Dienstag</th><td class="ph" data-placeholder="zeiten">[00:00 – 00:00]</td></tr>
+                <tr><th>Mittwoch</th><td class="ph" data-placeholder="zeiten">[00:00 – 00:00]</td></tr>
+                <tr><th>Donnerstag</th><td class="ph" data-placeholder="zeiten">[00:00 – 00:00]</td></tr>
+                <tr><th>Freitag</th><td class="ph" data-placeholder="zeiten">[00:00 – 00:00]</td></tr>
+                <tr><th>Samstag</th><td class="ph" data-placeholder="zeiten">[00:00 – 00:00]</td></tr>
+                <tr><th>Sonntag</th><td class="ph" data-placeholder="zeiten">[00:00 – 00:00]</td></tr>
+              </table>
+            </div>
+          </div>
+          <div class="map reveal">
+            <!-- PLATZHALTER: Google-Maps-Einbettung.
+                 In Google Maps: Teilen → „Karte einbetten“ → den <iframe>-Code hier einsetzen
+                 (dieses <div class="map__placeholder"> ersetzen). Datenschutz beachten (ggf. Zwei-Klick-Lösung). -->
+            <div class="map__placeholder" data-placeholder="google-maps">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+              <p><strong>[Google-Maps-Karte]</strong><br>Hier wird die Karte eingebettet.</p>
+              <!-- PLATZHALTER: Link „Route planen“ mit echter Adresse -->
+              <a class="btn btn--gold btn--sm" href="https://www.google.com/maps/search/?api=1&amp;query=Antalya+Grill" target="_blank" rel="noopener" data-placeholder="maps-link">Route planen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 9. Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo-light.webp" width="1000" height="223" loading="lazy" alt="Antalya Grill – Döner, Falafel, Pizza">
+        <p>Frischer Döner im hausgemachten Brot, Falafel, Pizza &amp; Pide, bunte Salate und täglich frische Baklava. Seit 2024.</p>
+      </div>
+      <div class="footer__col">
+        <h3>Kontakt</h3>
+        <p><span class="ph" data-placeholder="strasse">[Straße]</span> 23<br><span class="ph" data-placeholder="plz-ort">[PLZ] [Ort]</span><br>
+          <a class="ph" href="tel:+490000000000" data-placeholder="telefon">[Telefonnummer]</a></p>
+      </div>
+      <div class="footer__col">
+        <h3>Rechtliches</h3>
+        <ul>
+          <!-- PLATZHALTER: Links zu Impressum und Datenschutzerklärung -->
+          <li><a href="#impressum" data-placeholder="impressum">Impressum</a></li>
+          <li><a href="#datenschutz" data-placeholder="datenschutz">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__allergy">
+      <p><strong>Allergene-Hinweis:</strong> Unsere Speisen können Allergene enthalten. Die Zusatzstoffe sind in der Speisekarte gekennzeichnet. Bitte sprich unser Personal an – wir informieren dich gern.</p>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Antalya Grill</p>
+      <div class="stars-row stars-row--xs" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+    </div>
+  </footer>
+
+  <!-- Mobil: schwebender Speisekarte-Button -->
+  <a class="fab" href="#speisekarte" id="fab">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg>
+    Speisekarte
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
