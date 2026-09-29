@@ -32,6 +32,6 @@ Alle Platzhalter sind im HTML mit `<!-- PLATZHALTER -->` kommentiert und tragen 
 | Öffnungszeiten (Mo–So) | Kontakt |
 | Google-Maps-Einbettung (`<iframe>`) + Link „Route planen“ | Kontakt |
 | Direkter Link zum Google-Eintrag | Button „Alle Bewertungen auf Google“ |
-| 3 Bewertungstexte (Englisch, wörtlich) | Bewertungen |
+| 3. Bewertungstext (Englisch, wörtlich) – 2 von 3 sind eingetragen | Bewertungen |
 | Impressum- und Datenschutz-Seiten/Links | Footer |
 | Domain für `canonical` | `<head>` |
