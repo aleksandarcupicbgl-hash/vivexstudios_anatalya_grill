@@ -30,8 +30,6 @@ Alle Platzhalter sind im HTML mit `<!-- PLATZHALTER -->` kommentiert und tragen 
 | Straße, PLZ, Ort (Hausnr. 23 ist gesetzt) | Kontakt, Footer, JSON-LD im `<head>` |
 | Telefonnummer | Nav-Button „Anrufen“, Kontakt, Footer, JSON-LD |
 | Öffnungszeiten (Mo–So) | Kontakt |
-| Google-Maps-Einbettung (`<iframe>`) + Link „Route planen“ | Kontakt |
-| Direkter Link zum Google-Eintrag | Button „Alle Bewertungen auf Google“ |
-| 3. Bewertungstext (Englisch, wörtlich) – 2 von 3 sind eingetragen | Bewertungen |
+| Google-Maps-Einbettung (`<iframe>`) | Kontakt |
 | Impressum- und Datenschutz-Seiten/Links | Footer |
 | Domain für `canonical` | `<head>` |
